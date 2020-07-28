@@ -1,4 +1,4 @@
-# pg-cartpole
+# pg-cartpole-tf2
 
 # What is this
 play CartPole to 200 step with Policy Gradient using TensorFlow2.
