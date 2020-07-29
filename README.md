@@ -2,6 +2,7 @@
 
 # What is this
 play CartPole to 200 step with Policy Gradient using TensorFlow2.
+this code is refined from Aurelien Geron's <Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow>.
 
 # What is in
 policygradient_cartpole_train.py : train models ,write these models in "model-save-path" folder;
