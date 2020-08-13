@@ -52,9 +52,9 @@ def discount_and_normalize_rewards(all_rewards,discount_rate):
     return(new_all_rewards)
 
 #### build a nn model
-def nn():
+def nn(hidden_size=8):
     model=tf.keras.models.Sequential()
-    model.add(Dense(8,activation='relu',input_dim=4))
+    model.add(Dense(hidden_size,activation='relu',input_dim=4))
     model.add(Dense(1,activation=tf.keras.activations.sigmoid))
     return(model)
 
@@ -93,6 +93,7 @@ def play_multi_episodes(env,n_episodes,model,loss_fn):
 
 #### train an agent
 def train(args):
+    hidden_size=int(args['--hidden-size'])
     n_iteration=int(args['--max-iteration'])
     n_episodes=int(args['--episodes'])
     discount_rate=float(args['--discount-rate'])
