@@ -101,7 +101,7 @@ def train(args):
     save_model_every=int(args['--model-save-every'])
     save_path=args['--model-save-path']
     ##
-    model=nn()
+    model=nn(hidden_size)
     loss_fn=tf.losses.binary_crossentropy
     optimizer=tf.keras.optimizers.Adam(lr)
     #### play and train
