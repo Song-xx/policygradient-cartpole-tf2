@@ -19,7 +19,7 @@ pg_cartpole_test_result.csv            :  an example of result csv;
 
 # How to use
 ## train
-(1) make a new file to reserve the trained models  # default : ./
+(1) give a folder to reserve the trained models  # default : ./
 
 
 (2) python3 policygradient_cartpole_train.py    #default parameters is recommended
