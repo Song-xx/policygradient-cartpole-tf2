@@ -28,7 +28,7 @@ pg_cartpole_test_result.csv            :  an example of result csv;
 python3 policygradient_cartpole_test.py
 
 # other
-(1) when testing , you can use render to show the cartpole,but it will be slow.
+(1) when testing , you can use "--render=True" to show the cartpole,but it will be slow.
 
 
 (2) the model will saved every 20 iteration(default),the example max-step curve shows below:
